@@ -211,9 +211,6 @@
                 filter: $invert;
               }
             }
-            .NicorepoItemSkeleton {
-              background: none;
-            }
           }
         }
         .FollowPage-content {
@@ -263,14 +260,6 @@
               .FollowerContainer-followerCountValue {
                 color: $sub-1-text-color;
               }
-            }
-          }
-          .FollowOwnerItemSkeletonList,
-          .FollowingTagItemSkeletonList,
-          .FollowingMylistContainer {
-            li,
-            .MylistMediaObjectSkeleton {
-              background: none;
             }
           }
         }

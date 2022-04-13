@@ -40,6 +40,18 @@
   .NicorepoItem-item:hover{
     box-shadow: inset 0px 0px 20px 7.5px #555;
   }
+  .NicorepoItemSkeleton{
+    background-color: $sub2-background-color;
+    border: none;
+    &-senderName,
+    &-senderIcon,
+    &-activityDescription,
+    &-contentThumbnail,
+    &-contentDetailLabel,
+    &-contentDetailTitle{
+      background-color: $border-background-color;
+    }
+  }
 
   //フォロー：ユーザー
   .UserItem-content{
@@ -54,6 +66,19 @@
   }
   .UserItem:hover{
     box-shadow: none;
+  }
+  .FollowOwnerItemSkeletonList{
+    >li{
+      background: $sub2-background-color;
+      border: none;
+    }
+    >li>figure,
+    &-body>h1,
+    &-content1,
+    &-content2,
+    &-follow{
+      background-color: $border-background-color;
+    }
   }
 
   //フォロー：タグ
@@ -114,6 +139,20 @@
       }
     }
   }
+  .FollowingTagItemSkeletonList{
+    >li{
+      background: $sub2-background-color;
+      border: none;
+    }
+    >li>figure,
+    &-body>h1,
+    &-content1,
+    &-content2,
+    &-content3,
+    &-follow{
+      background-color: $border-background-color;
+    }
+  }
 
   //フォロー：マイリスト
   .MylistMediaObject{
@@ -143,6 +182,19 @@
   }
   .MylistMediaObject:hover{
     box-shadow: none;
+  }
+  .MylistMediaObjectSkeleton{
+    background-color: $sub2-background-color;
+    border: none;
+    &-body>h1,
+    &-description,
+    &-follow,
+    &-thumbnails>figure{
+      background-color: $border-background-color;
+    }
+    &-thumbnails{
+      background: none;
+    }
   }
 
   //フォロー：チャンネル
@@ -237,6 +289,18 @@
     }
   }
   /* 20210601 fix end */
+  .NC-VideoMediaObjectSkeleton{
+    >figure,
+    &-bar1,
+    &-bar2,
+    &-bar3,
+    &-bar4{
+      background-color: $nico-black;
+    }
+  }
+  .VideoMediaObjectListSkeleton>*+*{
+    border-color: $border-background-color;
+  }
 
   //あとで見る
   .WatchLaterList-item+.WatchLaterList-item{  
@@ -360,6 +424,20 @@
       .StampCard-star_placeholder{
         fill: $nico-black;
       }
+    }
+  }
+
+  //バッジ スケルトン
+  .BadgeCardSkeletonList{
+    >li{
+      background: $nico-black;
+      border-color: $border-background-color;
+    }
+    >li>figure,
+    &-separator,
+    &-title,
+    &-status{
+      background-color: $border-background-color;
     }
   }
 
