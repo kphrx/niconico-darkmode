@@ -20,6 +20,11 @@
           filter: $invert;
         }
       }
+      .HeaderContainer_Re-ad {
+        .PcUniTop468x60NorthAdContainer-skeleton { // 広告バナースケルトン
+          background-color: $sub2-background-color;
+        }
+      }
     }
 
     // 自分の名前以下
@@ -103,6 +108,16 @@
         .UserDetailsHeader:after {
           background-color: $border-background-color;
         }
+        .UserDetailsHeaderSkeleton{
+          &-icon,
+          &-nickname,
+          &-account,
+          &-statusLabel,
+          &-statusValue,
+          &-description {
+            background-color: $sub2-background-color;
+          }
+        }
       }
       .MainMenuContainer {
         background-color: $nico-black;
@@ -119,6 +134,14 @@
               background-color: $hover-background-color;
             }
           }
+        }
+      }
+      .MainMenuContainerSkeleton {
+        background-color: $nico-black;
+        border-top-color: $border-background-color;
+        &-menuList > li,
+        &-garageLink {
+          background-color: $sub2-background-color;
         }
       }
       .UserPage-main {
